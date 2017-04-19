@@ -1,4 +1,5 @@
+
 <?php
-define('ADALPHP_CLIENTID', 'e1d9258e-ef80-4e3d-914e-42bd6d83a3da');
-define('ADALPHP_CLIENTSECRET', 'M34Tn9bTa0VGtGL11hS3Bb3FsRn0YZ+ZzxmZ2GEkvKA=');
+define('ADALPHP_CLIENTID', 'effc753b-6651-45fe-85ca-395468c236bf');
+define('ADALPHP_CLIENTSECRET', '1oOeGNdnOzX56Un0fp04uyKgKz/+TTHc4wObWgs30gs=');
 define('ADALPHP_CLIENTREDIRECTURI', 'http://119.81.19.223/ad2/test.php');
