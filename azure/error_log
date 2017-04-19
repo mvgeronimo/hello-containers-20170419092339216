@@ -1,0 +1,18 @@
+[17-Mar-2016 00:19:26 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS70001: Application with identifier 'e1d9258e-ef80-4e3d-914e-42bd6d83a3dadsadsa' was not found in the directory unilab.com.ph
+Trace ID: f4677967-3178-4892-ad80-900d40d54ac9
+Correlation ID: 2b5a962b-4bd3-459d-9894-1135890fbc19
+Timestamp: 2016-03-17 00:19:26Z' in /home/sncdsfa/public_html/azure/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/azure/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"unaut...', Array)
+#1 /home/sncdsfa/public_html/azure/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('phpdeveloper9@u...', 'zapantajm050791...')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/azure/src/OIDC/Client.php on line 420
+[17-Mar-2016 00:32:01 UTC] PHP Warning:  Missing argument 1 for microsoft\adalphp\JWT::claim(), called in /home/sncdsfa/public_html/azure/result.php on line 62 and defined in /home/sncdsfa/public_html/azure/src/JWT.php on line 222
+[17-Mar-2016 00:32:51 UTC] PHP Fatal error:  Cannot use object of type microsoft\adalphp\AAD\IDToken as array in /home/sncdsfa/public_html/azure/result.php on line 62
+[17-Mar-2016 00:33:09 UTC] PHP Fatal error:  Call to undefined method microsoft\adalphp\AAD\IDToken::parent() in /home/sncdsfa/public_html/azure/result.php on line 62
+[17-Mar-2016 00:33:16 UTC] PHP Fatal error:  Call to undefined method microsoft\adalphp\AAD\IDToken::private() in /home/sncdsfa/public_html/azure/result.php on line 62
+[17-Mar-2016 00:33:30 UTC] PHP Fatal error:  Cannot use object of type microsoft\adalphp\AAD\IDToken as array in /home/sncdsfa/public_html/azure/result.php on line 62
+[17-Mar-2016 00:33:37 UTC] PHP Fatal error:  Cannot use object of type microsoft\adalphp\AAD\IDToken as array in /home/sncdsfa/public_html/azure/result.php on line 62
+[17-Mar-2016 00:34:15 UTC] PHP Fatal error:  Cannot use object of type microsoft\adalphp\AAD\IDToken as array in /home/sncdsfa/public_html/azure/result.php on line 62
+[17-Mar-2016 00:34:26 UTC] PHP Fatal error:  Cannot use object of type microsoft\adalphp\AAD\IDToken as array in /home/sncdsfa/public_html/azure/result.php on line 62
+[17-Mar-2016 00:34:28 UTC] PHP Fatal error:  Cannot use object of type microsoft\adalphp\AAD\IDToken as array in /home/sncdsfa/public_html/azure/result.php on line 62

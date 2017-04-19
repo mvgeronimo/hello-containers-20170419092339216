@@ -1,0 +1,195 @@
+[15-Mar-2016 01:02:46 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/login.php on line 37
+[15-Mar-2016 01:02:59 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/login.php on line 37
+[15-Mar-2016 01:03:16 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php on line 37
+[15-Mar-2016 01:05:29 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php on line 12
+[15-Mar-2016 01:06:35 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php on line 12
+[15-Mar-2016 01:42:43 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php on line 12
+[15-Mar-2016 01:43:23 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php on line 37
+[15-Mar-2016 01:43:57 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php on line 37
+[15-Mar-2016 01:45:11 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/login.php on line 37
+[15-Mar-2016 01:45:26 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php on line 37
+[15-Mar-2016 01:45:48 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php on line 37
+[15-Mar-2016 01:45:53 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php on line 37
+[15-Mar-2016 01:46:23 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php on line 42
+[15-Mar-2016 01:48:20 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'Cannot read database.' in /home/sncdsfa/public_html/ad2/src/OIDC/StorageProviders/SQLite.php:41
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(32): microsoft\adalphp\OIDC\StorageProviders\SQLite->__construct('/home/sncdsfa/p...')
+#1 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/StorageProviders/SQLite.php on line 41
+[15-Mar-2016 01:52:08 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS90014: The request body must contain the following parameter: 'username'.
+Trace ID: 85d54d95-330a-41cb-8001-bcebd0875677
+Correlation ID: 865b95ef-9383-44d2-96cb-9aa8887623d6
+Timestamp: 2016-03-15 01:52:08Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest(NULL, NULL)
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 01:52:55 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS70002: Error validating credentials. AADSTS50126: Invalid username or password
+Trace ID: ca461059-dc8a-45ea-8e3a-b5a3681ccf6b
+Correlation ID: 4691cf7d-8ef9-4c64-9adf-948b16bbf6af
+Timestamp: 2016-03-15 01:52:55Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('phpdeveloper9@u...', 'dsadsa')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 01:56:26 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS50034: To sign into this application the account must be added to the graph.windows.net directory.
+Trace ID: 9fbb2cdf-41bb-4f3c-a793-e5dae73964d5
+Correlation ID: 4eb30119-250c-417d-8a8a-7b069a20d801
+Timestamp: 2016-03-15 01:56:26Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('phpdeveloper9', 'zapantajm050791...')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 01:57:09 UTC] PHP Parse error:  syntax error, unexpected ')', expecting :: (T_PAAMAYIM_NEKUDOTAYIM) in /home/sncdsfa/public_html/ad2/src/samples/login.php on line 37
+[15-Mar-2016 01:58:45 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS90014: The request body must contain the following parameter: 'username'.
+Trace ID: ab423c2e-8b4b-4a56-b682-51ea6e11a287
+Correlation ID: fedf28ec-b222-4426-aa41-e03eba2c30f9
+Timestamp: 2016-03-15 01:58:45Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest(NULL, NULL)
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 01:58:55 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS50034: To sign into this application the account must be added to the graph.windows.net directory.
+Trace ID: eec8f58f-d688-49f3-8eef-94465fa8e990
+Correlation ID: 7b053a7e-8e19-41aa-9c28-ec1b98fb5642
+Timestamp: 2016-03-15 01:58:55Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('pdsa', 'ssadas')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:00:30 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS90014: The request body must contain the following parameter: 'username'.
+Trace ID: 5185fd63-bc7c-40bf-94b4-86a98070abfa
+Correlation ID: 1b0b6c22-177a-4474-9c7e-356f4311d3eb
+Timestamp: 2016-03-15 02:00:30Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest(NULL, NULL)
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:00:43 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS50034: To sign into this application the account must be added to the graph.windows.net directory.
+Trace ID: 1197a45d-b281-4e82-b89f-64bda7a83b06
+Correlation ID: 26c9d9cc-3a38-4776-a130-3072554faef1
+Timestamp: 2016-03-15 02:00:42Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('pdsa', 'ads')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:08:17 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS50034: To sign into this application the account must be added to the graph.windows.net directory.
+Trace ID: a53100b2-0ed4-439b-9e8e-33dd89070ed4
+Correlation ID: e2d4deaf-4528-4a13-9ed4-5585700032e5
+Timestamp: 2016-03-15 02:08:17Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('das', 'sad')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:08:55 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS50034: To sign into this application the account must be added to the graph.windows.net directory.
+Trace ID: 01522fac-525c-4fb6-afbe-1c3d7509f38b
+Correlation ID: 3ffb2f8e-9ef6-4928-aafa-811913ae0966
+Timestamp: 2016-03-15 02:08:55Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('das', 'sad')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:10:57 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS90014: The request body must contain the following parameter: 'username'.
+Trace ID: 97ab91a1-f77f-4d99-b94e-7301734d290c
+Correlation ID: 6c37c01c-6c5d-4560-b279-6abf1a5662c1
+Timestamp: 2016-03-15 02:10:57Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(56): microsoft\adalphp\AAD\Client->rocredsrequest(NULL, NULL)
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:11:32 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS50034: To sign into this application the account must be added to the graph.windows.net directory.
+Trace ID: 9cb59fae-5142-4f97-afc7-8733c62a4b2b
+Correlation ID: 6e04d530-b743-4cf5-92c1-aaa841923851
+Timestamp: 2016-03-15 02:11:32Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(56): microsoft\adalphp\AAD\Client->rocredsrequest('dsa', 'dsa')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:15:14 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS50034: To sign into this application the account must be added to the graph.windows.net directory.
+Trace ID: ebb0c133-cfc9-4275-bce5-37588b13cdb0
+Correlation ID: f525c452-1046-409a-90a9-39770e1c8d83
+Timestamp: 2016-03-15 02:15:13Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('dsa', 'dsa')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:29:50 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS90014: The request body must contain the following parameter: 'username'.
+Trace ID: 86767d5f-b1ac-4de6-89f4-3327c9f84e02
+Correlation ID: 9a6f766e-7262-41f1-a983-fdb991bf8727
+Timestamp: 2016-03-15 02:29:50Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest(NULL, NULL)
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:30:04 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS50034: To sign into this application the account must be added to the graph.windows.net directory.
+Trace ID: e3999403-b99c-4048-b8e7-a35decec406d
+Correlation ID: b28dce23-5d05-4995-8e28-0be6eac0b671
+Timestamp: 2016-03-15 02:30:04Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('dsa', 'dsa')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:32:29 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS50034: To sign into this application the account must be added to the graph.windows.net directory.
+Trace ID: 1fd12bfd-6085-47e0-9f33-3d6da0503ab4
+Correlation ID: e09afdb9-1b28-4f3e-8da5-7aa4f1a22d35
+Timestamp: 2016-03-15 02:32:29Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('dsa', 'dsa')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:34:59 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS50034: To sign into this application the account must be added to the graph.windows.net directory.
+Trace ID: 5f42f96d-ae8b-4b64-a73f-28652061f351
+Correlation ID: c4b85503-48d6-4d5f-a783-60b1c79d00da
+Timestamp: 2016-03-15 02:34:58Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('dsa', 'dsa')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:35:26 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS50034: To sign into this application the account must be added to the graph.windows.net directory.
+Trace ID: 416abd1e-2c56-4fe3-b619-98094cafdeb1
+Correlation ID: e15c69fa-ee90-439d-913c-074e6cf02f75
+Timestamp: 2016-03-15 02:35:26Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('dsa', 'dsa')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:38:00 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Error response received.: AADSTS50034: To sign into this application the account must be added to the graph.windows.net directory.
+Trace ID: d75f4e53-f93f-41f1-affe-cd0fdd1a6013
+Correlation ID: ed9a5e32-628c-4a5c-bb00-5c85c6fdc0a6
+Timestamp: 2016-03-15 02:38:00Z' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:420
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('dsa', 'dsa')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:38:43 UTC] PHP Fatal error:  Class 'microsoft\adalphp\ADALPHPException' not found in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 420
+[15-Mar-2016 02:39:41 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Invalid response received, missing parameter.' in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php:429
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/AAD/Client.php(72): microsoft\adalphp\OIDC\Client->process_json_response('{"error":"inval...', Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(55): microsoft\adalphp\AAD\Client->rocredsrequest('dsa', 'dsa')
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/OIDC/Client.php on line 429
+[15-Mar-2016 02:42:32 UTC] PHP Fatal error:  Uncaught exception 'microsoft\adalphp\ADALPHPException' with message 'Empty or non-string JWT received.' in /home/sncdsfa/public_html/ad2/src/JWT.php:88
+Stack trace:
+#0 /home/sncdsfa/public_html/ad2/src/OIDC/IDToken.php(112): microsoft\adalphp\JWT::decode(NULL, Array)
+#1 /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php(60): microsoft\adalphp\OIDC\IDToken::instance_from_encoded(NULL)
+#2 {main}
+  thrown in /home/sncdsfa/public_html/ad2/src/JWT.php on line 88
+[15-Mar-2016 02:47:53 UTC] PHP Warning:  Missing argument 1 for microsoft\adalphp\JWT::claim(), called in /home/sncdsfa/public_html/ad2/src/samples/pwgrant.php on line 62 and defined in /home/sncdsfa/public_html/ad2/src/JWT.php on line 222

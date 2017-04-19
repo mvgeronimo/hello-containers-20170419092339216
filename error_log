@@ -1,0 +1,25 @@
+[24-Feb-2017 06:58:52 UTC] PHP Fatal error:  Call to a member function library() on null in /home/biomedis/public_html/application/controllers/Login_controller.php on line 11
+[24-Feb-2017 06:58:53 UTC] PHP Fatal error:  Call to a member function library() on null in /home/biomedis/public_html/application/controllers/Login_controller.php on line 11
+[24-Feb-2017 06:58:54 UTC] PHP Fatal error:  Call to a member function library() on null in /home/biomedis/public_html/application/controllers/Login_controller.php on line 11
+[24-Feb-2017 06:58:55 UTC] PHP Fatal error:  Call to a member function library() on null in /home/biomedis/public_html/application/controllers/Login_controller.php on line 11
+[24-Feb-2017 06:58:56 UTC] PHP Fatal error:  Call to a member function library() on null in /home/biomedis/public_html/application/controllers/Login_controller.php on line 11
+[24-Feb-2017 06:59:20 UTC] PHP Fatal error:  Call to a member function library() on null in /home/biomedis/public_html/application/controllers/Login_controller.php on line 11
+[27-Feb-2017 02:55:51 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in /home/biomedis/public_html/job.php on line 8
+[27-Feb-2017 13:18:54 Asia/Manila] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/biomedis/public_html/job.php on line 22
+[27-Feb-2017 13:26:21 Asia/Manila] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/biomedis/public_html/job.php on line 22
+[28-Feb-2017 08:42:18 Asia/Manila] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/biomedis/public_html/job.php on line 22
+[28-Feb-2017 08:43:07 Asia/Manila] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/biomedis/public_html/job.php on line 22
+[08-Mar-2017 10:52:07 UTC] PHP Fatal error:  Call to a member function bind_param() on boolean in /home/biomedis/public_html/validate_user.php on line 12
+[08-Mar-2017 10:52:22 UTC] PHP Fatal error:  Call to a member function bind_param() on boolean in /home/biomedis/public_html/validate_user.php on line 12
+[08-Mar-2017 10:52:32 UTC] PHP Fatal error:  Call to a member function bind_param() on boolean in /home/biomedis/public_html/validate_user.php on line 12
+[08-Mar-2017 10:53:53 UTC] PHP Fatal error:  Call to a member function bind_param() on boolean in /home/biomedis/public_html/validate_user.php on line 13
+[21-Mar-2017 16:44:26 Asia/Taipei] PHP Fatal error:  Cannot use object of type stdClass as array in /home/biomedis/public_html/application/controllers/Employee_competency_development.php on line 39
+[21-Mar-2017 16:44:40 Asia/Taipei] PHP Fatal error:  Cannot use object of type stdClass as array in /home/biomedis/public_html/application/controllers/Employee_competency_development.php on line 39
+[21-Mar-2017 16:44:42 Asia/Taipei] PHP Fatal error:  Cannot use object of type stdClass as array in /home/biomedis/public_html/application/controllers/Employee_competency_development.php on line 39
+[21-Mar-2017 16:45:00 Asia/Taipei] PHP Fatal error:  Cannot use object of type stdClass as array in /home/biomedis/public_html/application/controllers/Employee_competency_development.php on line 39
+[21-Mar-2017 16:45:30 Asia/Taipei] PHP Fatal error:  Cannot use object of type stdClass as array in /home/biomedis/public_html/application/controllers/Employee_competency_development.php on line 39
+[21-Mar-2017 16:58:09 Asia/Taipei] PHP Parse error:  syntax error, unexpected '?>' in /home/biomedis/public_html/application/views/completion/home.php on line 57
+[21-Mar-2017 09:16:23 UTC] PHP Parse error:  syntax error, unexpected '(', expecting ')' in /home/biomedis/public_html/application/controllers/Generate_agenda.php on line 216
+[31-Mar-2017 16:26:04 Asia/Taipei] PHP Fatal error:  Call to undefined function issets() in /home/biomedis/public_html/application/views/template/layout.php on line 52
+[31-Mar-2017 16:26:06 Asia/Taipei] PHP Fatal error:  Call to undefined function issets() in /home/biomedis/public_html/application/views/template/layout.php on line 52
+[31-Mar-2017 16:26:06 Asia/Taipei] PHP Fatal error:  Call to undefined function issets() in /home/biomedis/public_html/application/views/template/layout.php on line 52

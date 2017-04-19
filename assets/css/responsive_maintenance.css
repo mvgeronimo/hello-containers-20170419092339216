@@ -1,0 +1,177 @@
+
+ .pagination_div {
+  		padding-bottom: 5% !important;
+ }
+ .btn-user:hover {
+	    background-color: #5bc0de !important;
+	    border-color: #46b8da;
+ }
+ .btn-user {
+	  	border-radius: 0px;
+	    background: #012873 !important;
+	    margin-left: 10px;
+	    width: 9%;
+	    margin-top: 2%;
+ }
+ .btn-user-action {
+	  	text-align:right;
+	  	margin-bottom:5px;
+	  	padding: 0px;
+ }
+ .pad-0 {
+  		padding: 0px !important;
+ }
+ .border-top-blue {
+  	    border-top: 20px solid #012873;
+  	    font-size: 12px;
+ }
+.btn {
+		background-color: #262626;
+		border-color: #262626;
+		color: white;
+}
+.active1 {
+	    background-color: #5c5a5a !important;
+	    color: white !important;
+}
+.table-green {
+    	color: #000;
+}
+.audit-prod-pagination {
+		padding: 5px;
+    	font-size: 10px;
+}
+.second-filter {
+		margin-top: 3%;
+		width: 90%;
+		font-weight: bold;
+}
+#filter-title {
+		background: #012873;
+	    color: #fff;
+	    height: 30px;
+	    padding-top: 5px;
+	    padding-left: 5px;
+	    font-weight: bold;
+	    margin-bottom: 10px;
+}
+.ctd {
+		text-align: center;
+}
+.user-data {
+	margin-bottom: 2%;
+}
+.create-user-title {
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-weight: bold;
+}
+.user_add_border {
+	border: 2px solid #000000;
+}
+.required {
+	color: red;
+}
+.btn-usersave-action {
+	text-align: right;
+    margin-bottom: 13%;
+    padding: 0px;
+    margin-top: 2%;
+}
+.btn-user-save {
+	background: #012873 !important;
+    margin-left: 10px;
+    width: 9%;
+    margin-top: 2%;
+    border-radius: 0px;
+}
+.user_add {
+	width: 90%;
+}
+.modal-user {
+    padding-top: 2% !important;
+}
+.modal-dialog {
+    margin-top: 0px;
+}
+.modal-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.modal-header {
+	border-bottom: 0px !important;
+}
+
+.modal-content-edit, #user-maintenance-content {
+    background: #C1CDCD;
+}
+.btn-user-update {
+    background: #012873 !important;
+    margin-left: 10px;
+    margin-top: 2%;
+    border-radius: 0px;
+}
+.modal-user-details{
+	margin-top: 5%;
+    margin-bottom: 1%;
+}
+.btn-usersave-modal{
+	text-align: right;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.error {
+	color: red;
+	font-size: 12px;
+}
+.er-msg {
+	color: red;
+	display: none;
+    float: left;
+    position: fixed;
+    font-size: 12px;
+}
+.er-msg-modal {
+	color: red;
+	display: none;
+    float: left;
+    font-size: 12px;
+}
+.email-text{
+	color: blue;
+    text-decoration: underline;
+}
+.sorted_by_check {
+	margin-top: 1%;
+}
+
+@media(max-width: 1300px){
+
+	.btn-user,.btn-user-save {
+    	width: auto;
+	}
+	#filter-title {
+	    margin-top: 10px;
+	}
+	.tab-paging {
+    	margin-top: 104px;
+	}
+
+}
+
+@media(max-width: 640px){
+
+	.tab-paging {
+    	margin-top: 104px;
+	}
+
+}
+
+@media(max-width: 1024px){
+
+	.user-table-responsive {
+		overflow: scroll;
+    	overflow-y: hidden;
+    	width: 100%;
+	}
+}

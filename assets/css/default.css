@@ -1,0 +1,289 @@
+.schedule_container,.summary_div{
+min-height:575px;
+}
+.footer1{
+height:50px;
+}
+.no-padding{
+	padding:0!important;
+}
+
+
+.page_title {
+	font-size: 40px;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+.no-padding-left{
+	padding-left:0!important;
+}
+
+.no-padding-right{
+	padding-right: 0!important;
+}
+
+.margin-top-20px{
+	margin-top:20px!important;
+}
+
+.padding-top-20px{
+	padding-top: 20px!important
+}
+
+.margin-top-50px{
+	margin-top: 50px!important;
+}
+
+.right{
+	float: right;
+}
+
+.title-bar {
+    background-color: #4f81bd;
+    border: 3px solid #385d8a;
+    color: white;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.biomedis-logo {
+	cursor: pointer;
+}
+
+
+/*.btn-next a{
+	max-width: 190px;
+}
+
+.btn-next a.Competitors-Activity-Report{
+	max-width: 220px;
+}
+
+
+.btn-next a.RemarksEvaluation{
+	max-width: 200px;
+}
+
+.btn-next a {
+	float: right;
+	text-decoration: none;
+	border:1px solid #e1e1e1;
+	padding: 10px;
+	color:#fff;
+	text-align: center;
+	background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+}*/
+
+
+.btn-next a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	}
+
+.rating-system{
+	font-weight: bold;
+}
+
+.content-item table thead th, .content-item table tbody{
+	text-align: center;
+}
+
+.rating ul li{
+	text-decoration: none;
+	list-style: none;
+}
+
+.remove-icon{
+	float:right;
+	font-size: 21px;
+}
+
+.remove-icon:hover{
+	font-size: 21px;
+	cursor: pointer;
+	opacity: .5;
+}
+
+.clear{
+	clear: both;
+	float: none;
+}
+
+.AddLine{
+	padding: 3px;
+	padding-left: 25px;
+	padding-right: 25px;
+	/*border-radius: 5px;*/
+	background: #3276b1;
+	color:#fff;
+	border:0;
+	-webkit-background-color:#3276b1;
+	-moz-background-color:#3276b1;
+}
+
+.AddLine:hover{
+	background:#385d8a;
+}
+
+.remove-icon{
+	padding-top: 5px;
+}
+
+table.EDeCvelopement-table  tr th, table.EDeCvelopement-table tbody tr td{
+	border:1px solid #000!important;
+}
+
+
+
+table.ASMSheet-table, table.PITPlanned-table  {
+	margin-top:8px;
+}
+
+
+.flex-control-nav li {
+    margin: 0 6px;
+    /*display: inline-block;*/
+    zoom: 1;
+     list-style-image: url('../assets/images/piatos-ol.png');
+}
+
+.flex-control-paging {
+	padding: 0px;
+}
+
+
+.flex-control-paging li a {
+    width: 11px;
+    height: 11px;
+    display: block;
+   /* background: #c1c1c1;*/
+   /*list-style-image: url('../assets/images/piatos-ol.png');*/
+    cursor: pointer;
+    text-indent: -9999px;
+ /*   -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;*/
+}
+
+.flex-control-paging li a {
+    width: 15px;
+    height: 15px;
+}
+
+.note{
+	font-weight: bold!important;
+	float: none!important;
+    clear: both!important;
+}
+
+.activePage{
+	color: #012873 !important;
+	font-weight: bold;
+}
+
+.tab-paging{
+	
+    padding: 3px;
+}
+
+
+table.table tr td, table.table tr th{
+	border:1px solid #000!important;
+
+}
+
+table tr td.no-border{
+	border:1px solid #fff!important;
+}
+
+table tr td.border-bottom-only
+{
+    border:1px solid #fff!important;
+    border-bottom: 1px solid #000!important;
+
+}
+
+.container {
+	background-image: url('../images/login-background.png');
+		margin: 0px;
+		background-size: 100%;
+		width: 100%;
+		background-repeat: no-repeat;
+		padding: 0px;
+		height: 100%;
+}
+
+.white_plains {
+		background-color: white;
+    height: 230px;
+    /* position: absolute; */
+    top: 60%;
+    z-index: 2;
+    margin-top: -87px;
+	}
+
+	.footer-login {
+		padding-top: 20px\9\0;
+margin-top:5px;
+	}
+
+	.footer-login p {
+		text-align: left;
+		margin: 10px;
+color:#fff;
+	}
+
+	.darkblue-font {
+		color: #012873;
+	}
+	.darkblue-bg {
+		background-color: #012873;
+		color: white;
+	}
+
+	.pad-0 {
+		padding: 0px;
+	}
+
+	.to_home, .darkblue-btn {
+	background-color: #012873;
+    color: white;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+	}
+
+	.progress_div {
+		margin-top:10%;
+	}
+	a {
+		cursor: pointer;
+	}
+
+	.margintop-10 {
+		margin-top: 10px;
+	}
+
+	.dotors_table, .sales_plan_tbl {
+		width: 100%;
+		text-align: center;
+	}
+
+	.dotors_table th, .dotors_table td, .sales_plan_tbl th, .sales_plan_tbl td {
+		padding: 5px 15px 5px 15px;
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.sales_plan_tbl td {
+		word-break:break-all;
+	}
