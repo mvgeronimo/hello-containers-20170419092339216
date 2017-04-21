@@ -57,6 +57,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 | The $query_builder variables lets you determine whether or not to load
 | the query builder class.
+
+| This was the orgitinal file, post i migrated the data , I have commented out this file - Sudesh
 */
 
 $active_group = 'default';
@@ -64,7 +66,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '119.81.221.66',
+	'hostname' => '119.81.221.66 us-cdbr-iron-east-03.cleardb.net',
 	'username' => 'internal_ojl',
 	'password' => ')uHO2~_7rHEF',
 	'database' => 'internal_ojl',
