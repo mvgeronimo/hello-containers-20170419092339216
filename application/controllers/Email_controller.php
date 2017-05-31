@@ -7,21 +7,11 @@ class Email_controller extends CI_Controller {
           parent::__construct();
           $this->load->library('email');
           $this->load->model('Home_model');
-        /*$config['protocol'] = 'sendmail';
+        $config['protocol'] = 'sendmail';
         $config['mailpath'] = '/usr/sbin/sendmail';
         $config['charset'] = 'iso-8859-1';
         $config['wordwrap'] = TRUE;
-        $config['mailtype'] = 'html';*/
-        $config = Array(
-            'protocol' => 'smtp',
-            'smtp_host' => 'ssl://smtp.sendgrid.net',
-            'smtp_port' => 465,
-            'smtp_user' => 'apikey',
-            'smtp_pass' => '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',
-            'mailtype'  => 'html', 
-            'charset'   => 'iso-8859-1'
-        );
-
+        $config['mailtype'] = 'html';
         $this->email->initialize($config);
 
     }
