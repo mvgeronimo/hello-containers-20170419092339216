@@ -12,6 +12,13 @@ class Ojl_evaluation extends CI_Controller {
 		$this->load->model('Home_model');
 		$this->Login_model->checkAccess();
 		
+		$this->load->library('email');
+		$config['protocol'] = 'sendmail';
+		$config['mailpath'] = '/usr/sbin/sendmail';
+		$config['charset'] = 'iso-8859-1';
+		$config['wordwrap'] = TRUE;
+		$config['mailtype'] = 'html';
+		$this->email->initialize($config);
 	}
 
 	public function index() {
@@ -68,26 +75,6 @@ class Ojl_evaluation extends CI_Controller {
 		$get_psr = $query2->result();
 
 		$date_now = date('F d, Y');
-
-		$this->load->library('email');
-
-		/*$config['protocol'] = 'sendmail';
-        $config['mailpath'] = '/usr/sbin/sendmail';
-        $config['charset'] = 'iso-8859-1';
-        $config['wordwrap'] = TRUE;
-        $config['mailtype'] = 'html';*/
-        $config = Array(
-		    'protocol' => 'smtp',
-		    'smtp_host' => 'ssl://smtp.sendgrid.net',
-		    'smtp_port' => 465,
-		    'smtp_user' => 'apikey',
-		    'smtp_pass' => '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',
-		    'mailtype'  => 'html', 
-		    'charset'   => 'iso-8859-1'
-		);
-
-        $this->email->initialize($config);
-
 		$this->email->from('OJLAdmin@unilab.com.ph', 'OJL Admin');
 		//$this->email->to('nicavee.jepollo@gmail.com');
 		//$this->email->to('pet_sahagun@yahoo.com');
