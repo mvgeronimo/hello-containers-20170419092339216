@@ -23,43 +23,16 @@ class Welcome extends CI_Controller {
 		// $this->load->library('doctrine');
 		// $em = $this->doctrine->em;
 		$this->load->view('welcome_message');
+		$this->load->library('email');
+		$config['protocol'] = 'sendmail';
+		$config['mailpath'] = '/usr/sbin/sendmail';
+		$config['charset'] = 'iso-8859-1';
+		$config['wordwrap'] = TRUE;
+		$config['mailtype'] = 'html';
+		$this->email->initialize($config);
 	}
 
 	public function send_email(){
-		$this->load->library('email');
-
-	/*	$config['protocol'] = 'sendmail';
-        $config['mailpath'] = '/usr/sbin/sendmail';
-        $config['charset'] = 'iso-8859-1';
-        $config['wordwrap'] = TRUE;
-        $config['mailtype'] = 'html';*/
-
-        $config = Array(
-		    'protocol' => 'smtp',
-		    'smtp_host' => 'ssl://smtp.sendgrid.net',
-		    'smtp_port' => 465,
-		    'smtp_user' => 'apikey',
-		    'smtp_pass' => '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',
-		    'mailtype'  => 'html', 
-		    'charset'   => 'iso-8859-1',
-		    'crlf'		=> '\r\n',
-		    'newline'	=> '\r\n',
-
-		);
-
-/*		$config = array();
-        $config['useragent']           = "CodeIgniter";
-        $config['mailpath']            = "/usr/bin/sendmail"; // or "/usr/sbin/sendmail"
-        $config['protocol']            = "sendmail";
-        $config['smtp_host']           = "localhost";
-        $config['smtp_port']           = "25";
-        $config['mailtype'] = 'html';
-        $config['charset']  = 'utf-8';
-        $config['newline']  = "\r\n";
-        $config['wordwrap'] = TRUE;
-*/
-        $this->email->initialize($config);
-
 		$this->email->from('OJLAdmin@unilab.com.ph', 'OJL Admin');
 
 		$this->email->to('phpdev.unilab@gmail.com');
