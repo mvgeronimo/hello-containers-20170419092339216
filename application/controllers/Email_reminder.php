@@ -14,6 +14,14 @@ class Email_reminder extends CI_Controller {
 		$this->load->model('Ojl_completion_model', 'completion');
 		//$this->Login_model->checkAccess();
 		
+		$this->load->library('email');
+		$config['protocol'] = 'sendmail';
+		$config['mailpath'] = '/usr/sbin/sendmail';
+		$config['charset'] = 'iso-8859-1';
+		$config['wordwrap'] = TRUE;
+		$config['mailtype'] = 'html';
+		$this->email->initialize($config);
+		
 	}
 
 	public function index() {
@@ -75,25 +83,6 @@ class Email_reminder extends CI_Controller {
 		// print_r($agenda);
 		// exit();
 
-		$this->load->library('email');
-
-		/*$config['protocol'] = 'sendmail';
-        $config['mailpath'] = '/usr/sbin/sendmail';
-        $config['charset'] = 'iso-8859-1';
-        $config['wordwrap'] = TRUE;
-        $config['mailtype'] = 'html';*/
-        $config = Array(
-		    'protocol' => 'smtp',
-		    'smtp_host' => 'ssl://smtp.sendgrid.net',
-		    'smtp_port' => 465,
-		    'smtp_user' => 'apikey',
-		    'smtp_pass' => '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',
-		    'mailtype'  => 'html', 
-		    'charset'   => 'iso-8859-1'
-		);
-
-        $this->email->initialize($config);
-
         $this->email->from('OJLAdmin@unilab.com.ph', 'OJL Admin');
 
         $this->email->to('c_TFQuitaleg@unilab.com.ph');
@@ -134,24 +123,6 @@ class Email_reminder extends CI_Controller {
 		$date = date_format($date, 'F d, Y');
 
 		$this->load->library('email');
-
-		/*$config['protocol'] = 'sendmail';
-        $config['mailpath'] = '/usr/sbin/sendmail';
-        $config['charset'] = 'iso-8859-1';
-        $config['wordwrap'] = TRUE;
-        $config['mailtype'] = 'html';*/
-        $config = Array(
-		    'protocol' => 'smtp',
-		    'smtp_host' => 'ssl://smtp.sendgrid.net',
-		    'smtp_port' => 465,
-		    'smtp_user' => 'apikey',
-		    'smtp_pass' => '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',
-		    'mailtype'  => 'html', 
-		    'charset'   => 'iso-8859-1'
-		);
-
-        $this->email->initialize($config);
-
 
         $this->email->from('OJLAdmin@unilab.com.ph', 'OJL Admin');
         $this->email->to('c_TFQuitaleg@unilab.com.ph');
@@ -209,26 +180,6 @@ class Email_reminder extends CI_Controller {
 		$psr_name = $get_psr[0]->firstname." ".$get_psr[0]->lastname;
 		$dm_name = $get_dm[0]->firstname." ".$get_dm[0]->lastname;
 		$dm_email = $get_dm[0]->email;
-
-
-		$this->load->library('email');
-
-		/*$config['protocol'] = 'sendmail';
-        $config['mailpath'] = '/usr/sbin/sendmail';
-        $config['charset'] = 'iso-8859-1';
-        $config['wordwrap'] = TRUE;
-        $config['mailtype'] = 'html';*/
-        $config = Array(
-		    'protocol' => 'smtp',
-		    'smtp_host' => 'ssl://smtp.sendgrid.net',
-		    'smtp_port' => 465,
-		    'smtp_user' => 'apikey',
-		    'smtp_pass' => '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',
-		    'mailtype'  => 'html', 
-		    'charset'   => 'iso-8859-1'
-		);
-
-        $this->email->initialize($config);
 
         $this->email->from('OJLAdmin@unilab.com.ph', 'OJL Admin');
         $this->email->to('c_TFQuitaleg@unilab.com.ph');
