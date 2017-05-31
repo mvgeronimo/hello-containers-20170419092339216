@@ -14,6 +14,14 @@ class Agenda extends CI_Controller {
 		$this->load->model('Ojl_completion_model', 'completion');
 		$this->Login_model->checkAccess();
 		
+		$this->load->library('email');
+		$config['protocol'] = 'sendmail';
+		$config['mailpath'] = '/usr/sbin/sendmail';
+		$config['charset'] = 'iso-8859-1';
+		$config['wordwrap'] = TRUE;
+		$config['mailtype'] = 'html';
+		$this->email->initialize($config);
+		
 	}
 
 	public function index() {
@@ -53,7 +61,7 @@ class Agenda extends CI_Controller {
 		$data['action_plan'] = $this->Home_model->get_action_plan($agenda_id);
 		$data['itenerary'] = $this->Agenda_model->getItenerary($agenda_id);
 		$data['sales_plan'] = $this->Home_model->get_sales_plan($agenda_id);
-
+\\Pf0lggn1-ulma-l\shared\Neurogen-e
 
 		$data['dm'] = $data['agenda'][0]->user_id;
 		$data['psr'] = $data['agenda'][0]->psr_id;
@@ -342,26 +350,6 @@ class Agenda extends CI_Controller {
 		} else {
 			$date_of_ojl = $datefrom.' - '.$dateto;
 		}
-
-		$this->load->library('email');
-
-		/*$config['protocol'] = 'sendmail';
-        $config['mailpath'] = '/usr/sbin/sendmail';
-        $config['charset'] = 'iso-8859-1';
-        $config['wordwrap'] = TRUE;
-        $config['mailtype'] = 'html';*/
-        $config = Array(
-		    'protocol' => 'smtp',
-		    'smtp_host' => 'ssl://smtp.sendgrid.net',
-		    'smtp_port' => 465,
-		    'smtp_user' => 'apikey',
-		    'smtp_pass' => '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',
-		    'mailtype'  => 'html', 
-		    'charset'   => 'iso-8859-1'
-		);
-
-        $this->email->initialize($config);
-
 		$this->email->from('OJLAdmin@unilab.com.ph', 'OJL Admin');
 		// $this->email->to('nicavee.jepollo@gmail.com');
 		//$this->email->to('pet_sahagun@yahoo.com');
@@ -452,26 +440,6 @@ class Agenda extends CI_Controller {
 		$get_dm = $query3->result();
 
 		$date_now = date('F d, Y');
-
-		$this->load->library('email');
-
-		/*$config['protocol'] = 'sendmail';
-        $config['mailpath'] = '/usr/sbin/sendmail';
-        $config['charset'] = 'iso-8859-1';
-        $config['wordwrap'] = TRUE;
-        $config['mailtype'] = 'html';*/
-        $config = Array(
-		    'protocol' => 'smtp',
-		    'smtp_host' => 'ssl://smtp.sendgrid.net',
-		    'smtp_port' => 465,
-		    'smtp_user' => 'apikey',
-		    'smtp_pass' => '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',
-		    'mailtype'  => 'html', 
-		    'charset'   => 'iso-8859-1'
-		);
-
-        $this->email->initialize($config);
-
 		$this->email->from('OJLAdmin@unilab.com.ph', 'OJL Admin');
 		// $this->email->to('nicavee.jepollo@gmail.com');
 		//$this->email->to('pet_sahagun@yahoo.com');
@@ -513,26 +481,6 @@ class Agenda extends CI_Controller {
 		$get_dm = $query3->result();
 
 		$date_now = date('F d, Y');
-
-		$this->load->library('email');
-
-		/*$config['protocol'] = 'sendmail';
-        $config['mailpath'] = '/usr/sbin/sendmail';
-        $config['charset'] = 'iso-8859-1';
-        $config['wordwrap'] = TRUE;
-        $config['mailtype'] = 'html';*/
-        $config = Array(
-		    'protocol' => 'smtp',
-		    'smtp_host' => 'ssl://smtp.sendgrid.net',
-		    'smtp_port' => 465,
-		    'smtp_user' => 'apikey',
-		    'smtp_pass' => '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',
-		    'mailtype'  => 'html', 
-		    'charset'   => 'iso-8859-1'
-		);
-
-        $this->email->initialize($config);
-
 		$this->email->from('OJLAdmin@unilab.com.ph', 'OJL Admin');
 		// $this->email->to('nicavee.jepollo@gmail.com');
 		//$this->email->to('pet_sahagun@yahoo.com');
@@ -572,26 +520,6 @@ class Agenda extends CI_Controller {
 		$query4 = $this->db->query("SELECT * FROM `ojl_dm_om` as a left join ojl_user as b on a.om = b.empid where dm = '".$get_agenda[0]->user_id."'");
 		$get_om = $query4->result();
 		$date_now = date('F d, Y');
-
-		$this->load->library('email');
-
-		/*$config['protocol'] = 'sendmail';
-        $config['mailpath'] = '/usr/sbin/sendmail';
-        $config['charset'] = 'iso-8859-1';
-        $config['wordwrap'] = TRUE;
-        $config['mailtype'] = 'html';*/
-        $config = Array(
-		    'protocol' => 'smtp',
-		    'smtp_host' => 'ssl://smtp.sendgrid.net',
-		    'smtp_port' => 465,
-		    'smtp_user' => 'apikey',
-		    'smtp_pass' => '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',
-		    'mailtype'  => 'html', 
-		    'charset'   => 'iso-8859-1'
-		);
-
-        $this->email->initialize($config);
-
 		$this->email->from('OJLAdmin@unilab.com.ph', 'OJL Admin');
 		// $this->email->to('nicavee.jepollo@gmail.com');
 		//$this->email->to('pet_sahagun@yahoo.com');
@@ -600,8 +528,6 @@ class Agenda extends CI_Controller {
 		$agenda_id = $_POST['agenda_id'];
 		$firstname_dm = $this->session->userdata('firstname');
 		$lastname_dm = $this->session->userdata('lastname');
-		
-
 		$newline = "<br>"; 
 
 		$this->email->subject('OJL report Operations Manager review');
@@ -645,27 +571,6 @@ class Agenda extends CI_Controller {
 		$cc_dm = $get_dm->result();
 
 		$date_now = date('F d, Y');
-
-
-		$this->load->library('email');
-
-		/*$config['protocol'] = 'sendmail';
-        $config['mailpath'] = '/usr/sbin/sendmail';
-        $config['charset'] = 'iso-8859-1';
-        $config['wordwrap'] = TRUE;
-        $config['mailtype'] = 'html';*/
-        $config = Array(
-		    'protocol' => 'smtp',
-		    'smtp_host' => 'ssl://smtp.sendgrid.net',
-		    'smtp_port' => 465,
-		    'smtp_user' => 'apikey',
-		    'smtp_pass' => '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',
-		    'mailtype'  => 'html', 
-		    'charset'   => 'iso-8859-1'
-		);
-
-        $this->email->initialize($config);
-
 		$this->email->from('OJLAdmin@unilab.com.ph', 'OJL Admin');
 		 $this->email->to('c_TFQuitaleg@unilab.com.ph');
 		//$this->email->cc('nicavee.jepollo@gmail.com');
